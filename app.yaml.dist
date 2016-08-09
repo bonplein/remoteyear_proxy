@@ -14,4 +14,4 @@ libraries:
   version: "2.5.2"
 
 env_variables:
-  FORECAST_API_KEY: 'api_key'
+  FORECAST_API_KEY: 'forecast_api_key'
