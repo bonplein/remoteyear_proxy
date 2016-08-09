@@ -20,4 +20,4 @@ deployment:
       - sed -i s/forecast_api_key/$FORECAST_API_KEY/ app.yaml
 
       # deploy to AppEngine
-      - sudo /opt/google-cloud-sdk/bin/gcloud -q preview app deploy app.yaml --promote --version=1
+      - sudo /opt/google-cloud-sdk/bin/gcloud -q app deploy app.yaml --promote --version=1
