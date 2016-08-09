@@ -14,7 +14,7 @@ class LocationsHandler(webapp2.RequestHandler):
         cache_key = latitude + '_' + longitude
 
         # try to get the data from the cache
-        response_data = google.appengine.api.memcache.add(key=cache_key)
+        response_data = google.appengine.api.memcache.get(key=cache_key)
 
         # The data isn't in the cache therefore fetch and add it to the cache
         if response_data is None:
