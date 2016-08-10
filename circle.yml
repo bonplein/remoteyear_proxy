@@ -16,7 +16,6 @@ deployment:
       - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file ${HOME}/gcloud-service-key.json
       - sudo /opt/google-cloud-sdk/bin/gcloud config set project $GCLOUD_PROJECT
       - cp app.yaml.dist app.yaml
-      - sed -i s/project_name/$GCLOUD_PROJECT/ app.yaml
       - sed -i s/forecast_api_key/$FORECAST_API_KEY/ app.yaml
 
       # deploy to AppEngine
